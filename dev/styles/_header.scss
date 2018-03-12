@@ -1,0 +1,67 @@
+// Header Section
+.nav-main {
+    display:flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+}
+.nav-icon {
+    font-size: 2.5rem;
+    color: #000;
+}
+.side-nav {
+    height:100%;
+    width:0;
+    position: absolute;
+    z-index: 15;
+    top:0;
+    left:0;
+    background-color: #111;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.side-settings {
+    height:100%;
+    width:0;
+    position: absolute;
+    z-index: 15;
+    top:0;
+    right:0;
+    background-color: #111;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.side-nav a {
+    padding: 10px 30px 10px 10px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+.side-nav a:hover,
+.side-settings a:hover {
+    color:#fff;
+}
+.side-settings input[type="range"]{
+    width: 75%;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+.side-nav .btn-close,
+.side-settings .btn-close {
+    position: absolute;
+    top:0;
+    right: 22px;
+    font-size:3.6rem;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #ccc;
+}
+.side-settings p {
+    color:#ccc;
+    padding-left: 20px;
+}

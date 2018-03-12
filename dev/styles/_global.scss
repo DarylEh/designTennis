@@ -1,0 +1,17 @@
+// Global Section
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 802px;
+    font-size: 62.5%;
+    font-family: 'Fira Sans', sans-serif;
+    margin:0 auto;
+    border: black 1px solid;
+    position: relative;
+}
+.wrapper {
+    max-width: 89%;
+    margin: 0 auto;
+}

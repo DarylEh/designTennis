@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Project</title>
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="public/styles/style.css">
+</head>
+<body>
+	<header>
+		<!-- Hamburger and Settings Icons -->
+		<nav class="nav-main wrapper">
+			<a href="#" onclick="openSlideMenu()" >
+				<i class="nav-icon hamburger-menu fas fa-bars"></i>
+			</a>
+			<a href="#" onclick="openSettingsMenu()">
+				<i class="nav-icon slider-menu fas fa-sliders-h"></i>
+			</a>
+		</nav>
+		<!-- Side Menu -->
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+			<a href="#">Home</a>
+			<a href="#">Settings</a>
+			<a href="#">Tickets</a>
+			<a href="#">Contact</a>
+		</div>
+		<!-- Settings Menu -->
+		<div id="side-settings" class="side-settings">
+			<a href="#" class="btn-close" onclick="closeSettingsMenu()">&times;</a>
+			<p>Settings 1</p>
+			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+			<p>Settings 2</p>
+			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+			<p>Settings 3</p>
+			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+		</div>
+	</header>
+	<main>
+		<!-- Results Buttons -->
+		<div class="results">
+			<div class="results-inner wrapper">
+				<h3>21 Results</h3>
+				<div class="results-btn">
+					<button class="btn-clear">Clear Filter(s)</button>
+					<button class="btn-edit">Edit Filter(s)</button>
+				</div>
+			</div>
+		</div>
+		<!-- Displayed Section -->
+		<div class="display">
+			<div class="wrapper">
+				<!-- First Card -->
+				<div class="display-card">
+					<div class="display-card-image">
+						<img src="./public/assets/img1.jpg" alt="">
+						<button class="btn-tickets btn-modal">Buy Tickets</button>
+					</div>
+					<div class="display-text">
+						<h3 class="display-title">GROOZ + Sandcatchers + Turkwaz</h3>
+						<p class="display-info">Presented by: Ashkenaz Foundation and Small World Music Society</p>
+						<div class="world">
+							<img class="world-image"src="/public/assets/world.svg" alt="">
+							<p class="world-text">Central America</p>
+						</div>
+						<div class="time">
+							<img class="time-image" src="/public/assets/time.svg" alt="">
+							<p class="time-text">Thu, Sep 14 <br>9:00 PM</p>
+						</div>
+						<div class="location">
+							<img class="location-image" src="/public/assets/location.svg" alt="">
+							<p class="location-text">Revival | 5km</p>
+						</div>
+					</div>
+				</div>
+				<!-- Second Card -->
+				<div class="display-card">
+					<div class="display-card-image">
+						<img src="./public/assets/img2.jpg" alt="">
+						<button class="btn-tickets btn-modal">Buy Tickets</button>
+					</div>
+					<div class="display-text">
+						<h3 class="display-title">GROOZ + Sandcatchers + Turkwaz</h3>
+						<p class="display-info">Presented by: Ashkenaz Foundation and Small World Music Society</p>
+						<div class="world">
+							<img class="world-image" src="/public/assets/world.svg" alt="">
+							<p class="world-text">Central America</p>
+						</div>
+						<div class="time">
+							<img class="time-image" src="/public/assets/time.svg" alt="">
+							<p class="time-text">Thu, Sep 14<br> 9:00 PM</p>
+						</div>
+						<div class="location">
+							<img class="location-image" src="/public/assets/location.svg" alt="">
+							<p class="location-text">Revival | 5km</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<form action="">
+				<p>How many tickets would you like to purchase:</p>
+				<br>
+				<select name="tickets">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<br>
+				<br>
+				<input class="submit" type="submit">
+			</form>
+		</div>
+	</div>
+	<script src="public/scripts/main.js"></script>
+</body>
+</html>

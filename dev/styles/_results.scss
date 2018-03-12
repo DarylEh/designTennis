@@ -1,0 +1,35 @@
+// Results Section
+.results {
+    background-color: #259b91;
+}
+.results-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}   
+h3  {
+    color:#fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+.btn-clear, .btn-edit {
+    background: #259b91;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    color:#fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    transition: all 0.4s ease-in
+}
+.btn-clear:hover, .btn-edit:hover {
+    transform: scale(1.1);
+}
+.btn-clear {
+    margin-right: 20px;
+}

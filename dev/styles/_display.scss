@@ -1,0 +1,65 @@
+// Display Section 
+.display-card {
+    display: flex;
+    margin-top: 25px;  
+}   
+.display-card-image, .display-text {
+    width:50%;
+    position: relative;
+}  
+.display-card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 25px 0 0 25px;
+    position: relative;
+}
+.btn-tickets {
+    position: relative;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #21aca1;
+    padding: 15px 65px 10px 65px;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid #21aca1;
+    letter-spacing: .5px;
+    font-weight: 400;
+    font-size: 1.7rem;
+    transition: all 0.4s ease-in-out;
+}   
+.btn-tickets:hover {
+    border: 2px solid #FFFFFF;
+}
+.display-text {
+    padding: 30px 30px 25px 30px;
+    background-color: #fff;
+    border-radius:  0 25px 25px 0;
+}   
+.display-title {
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.display-info {
+    padding: 35px 0 80px 0;
+}   
+p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.world, .time, .location {
+    display: flex;
+    padding-bottom: 25px;
+}   
+img {
+    margin-right: 18px;
+}
+.time-image {
+    align-self: flex-start;
+}

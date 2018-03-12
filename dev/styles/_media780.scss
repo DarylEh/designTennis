@@ -1,0 +1,26 @@
+/* ----- BREAK POINT: 780px -----*/
+@media (max-width: 780px) {
+    
+    .display-title {
+        font-size: 1.2rem;
+    }
+    .display-info {
+        padding: 25px 0 40px 0;
+        line-height: 25px;
+    }   
+    .btn-tickets {
+        padding: 15px 65px 10px 65px;
+    }
+    .side-settings p {
+        font-size: 2rem;
+    }
+    p,
+    select,
+    .submit,
+    .btn-clear, .btn-edit,
+    .btn-tickets,
+    .results-inner h3
+    {
+        font-size: 0.9rem;
+    }
+}
